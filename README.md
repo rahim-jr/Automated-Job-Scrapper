@@ -1,4 +1,4 @@
-# Bangladesh Job Scraper
+#Job Scraper
 
 A web application that scrapes job postings from various Bangladeshi job platforms and presents them in a modern, searchable interface.
 
