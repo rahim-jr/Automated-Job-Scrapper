@@ -1,7 +1,42 @@
 [project]
-name = "automated-job-scrapper"
+name = "bangladesh-job-scraper"
 version = "0.1.0"
-description = "Add your description here"
-readme = "README.md"
-requires-python = ">=3.12"
-dependencies = []
+description = "A job scraping application for Bangladeshi job platforms"
+authors = [
+    {name = "Your Name", email = "your.email@example.com"}
+]
+dependencies = [
+    "fastapi>=0.104.1",
+    "uvicorn>=0.24.0",
+    "beautifulsoup4>=4.12.2",
+    "requests>=2.31.0",
+    "python-dotenv>=1.0.0",
+    "sqlalchemy>=2.0.23",
+    "pydantic>=2.5.2",
+    "aiohttp>=3.9.1",
+    "python-multipart>=0.0.6",
+]
+requires-python = ">=3.8"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.ruff]
+line-length = 88
+target-version = "py38"
+
+[tool.ruff.lint]
+select = [
+    "E",  # pycodestyle errors
+    "W",  # pycodestyle warnings
+    "F",  # pyflakes
+    "I",  # isort
+    "B",  # flake8-bugbear
+]
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+skip-magic-trailing-comma = false
+line-ending = "auto"
